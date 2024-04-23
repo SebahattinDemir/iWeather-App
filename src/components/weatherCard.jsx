@@ -86,7 +86,7 @@ const WeatherCard = ({
 
                       <img
                         className="weather-info-img"
-                        src={`../public/img/${weather.current.condition.text
+                        src={`img/${weather.current.condition.text
                           .toLowerCase()
                           .replace(/\s/g, "")}.png`}
                         alt={weather.current.condition.text}
@@ -101,7 +101,7 @@ const WeatherCard = ({
                     <div className="weather-info-item">
                       <span className="weather-info-label">
                         <img
-                          src="../public/img/info-icons/thermal.png"
+                          src="img/info-icons/thermal.png"
                           alt="Thermal sensation"
                           className="weather-info-icon"
                         />
@@ -114,7 +114,7 @@ const WeatherCard = ({
                     <div className="weather-info-item">
                       <span className="weather-info-label">
                         <img
-                          src="../public/img/info-icons/rain.png "
+                          src="img/info-icons/rain.png "
                           alt="Probability of rain"
                           className="weather-info-icon"
                         />
@@ -131,7 +131,7 @@ const WeatherCard = ({
                     <div className="weather-info-item">
                       <span className="weather-info-label">
                         <img
-                          src="../public/img/info-icons/wind.png"
+                          src="img/info-icons/wind.png"
                           alt="Wind speed"
                           className="weather-info-icon"
                         />
@@ -144,7 +144,7 @@ const WeatherCard = ({
                     <div className="weather-info-item">
                       <span className="weather-info-label">
                         <img
-                          src="../public/img/info-icons/air.png"
+                          src="img/info-icons/air.png"
                           alt="Air humidity"
                           className="weather-info-icon"
                         />
@@ -157,7 +157,7 @@ const WeatherCard = ({
                     <div className="weather-info-item">
                       <span className="weather-info-label">
                         <img
-                          src="../public/img/info-icons/UV.png"
+                          src="img/info-icons/UV.png"
                           alt="UV Index"
                           className="weather-info-icon"
                         />
@@ -180,7 +180,7 @@ const WeatherCard = ({
                           </h4>
 
                           <img
-                            src={`../public/img/${day.day.condition.text
+                            src={`img/${day.day.condition.text
                               .toLowerCase()
                               .replace(/\s/g, "")}.png`}
                             alt={day.day.condition.text}

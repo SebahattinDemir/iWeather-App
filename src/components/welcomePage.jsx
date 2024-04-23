@@ -7,7 +7,7 @@ const WelcomePage = ({ location, locationChange, handleKeyDown, searching }) => 
         <div className=" text-center fs-1 position-absolute top-0 d-flex align-items-center">
           <span>
             <img
-              src="../public/img/Vector.png"
+              src="img/Vector.png"
               alt="logo"
               className="me-2"
               width={36}

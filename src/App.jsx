@@ -15,7 +15,7 @@ function App() {
     const apiKey = import.meta.env.VITE_WEATHER_API;
     try {
       const res = await axios.get(
-        `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=5&aqi=yes&alerts=yes&lang=en`
+        `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=5&aqi=yes&alerts=yes&lang=en`
         /*  `api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}` */
       );
       setWeathers([{ ...res.data, showDetails: false }, ...weathers]);
@@ -41,7 +41,7 @@ function App() {
           weathers[weathers.length - 1].current.is_day === 1 ? "Day" : "Night";
         const condition = currentWeather.toLowerCase().replace(/\s/g, "");
         const imageName = `Weather=${condition},Moment=${moment}`;
-        setBackgroundImage(`../public/img/background/${imageName}.png`);
+        setBackgroundImage(`img/background/${imageName}.png`);
       }
     };
 
