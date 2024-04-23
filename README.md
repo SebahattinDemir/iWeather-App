@@ -46,7 +46,7 @@ iWeather, kullanıcıların seçtikleri şehirlerin güncel hava durumu bilgiler
     npm run dev
     ```
 
-7. Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresine giderek uygulamayı görüntüleyin.
+7. Tarayıcınızda [iWeather-App](https://sebahattindemir.github.io/iWeather-App/) adresine giderek uygulamayı görüntüleyin.
 
 ## Kullanılan Teknolojiler
 
