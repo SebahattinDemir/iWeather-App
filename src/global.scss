@@ -1,0 +1,238 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+* {
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("../public/img/homepage-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.container {
+  color: #e1e1e6;
+  padding: 8px 8px 20px 8px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+
+    .subTitle {
+      color: #e1e1e69c;
+    }
+
+    .form-control {
+      width: 75%;
+      margin-top: 10px;
+      background: rgb(90, 90, 90);
+      border: none;
+      color: rgba(252, 252, 252, 0.758);
+      margin-bottom: 25px;
+    }
+    ::placeholder {
+      color: rgba(252, 252, 252, 0.5);
+    }
+  
+    .custom-weather-card {
+      width: 100%;
+      background-color: #13131a;
+      font-family: "Nunito", sans-serif;
+      color: #e1e1e6;
+      justify-content: flex-start !important;
+      
+    
+      .weather-today {
+        background-color: #16161f;
+        border-radius: 8px;
+        margin-bottom: 12px;
+    
+        .weather-today-card {
+          width: auto;
+          height: 350px;
+          margin: 12px;
+          position: relative;
+          border-radius: 8px;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+    
+          .toggle-details {
+            position: absolute;
+            bottom: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+            z-index: 10;
+            font-size: 24px;
+          }
+    
+          .back-button {
+            position: absolute;
+            background: none;
+            border: none;
+            z-index: 999;
+            color: #e1e1e6;
+            width: 48px;
+            height: 48px;
+            margin: 4px;
+          }
+    
+          .delete-button {
+            position: absolute;
+            background: none;
+            border: none;
+            z-index: 999;
+            color: #e1e1e6;
+            cursor: pointer;
+            font-size: 24px;
+            margin: 4px;
+          }
+    
+          .card-header {
+            position: relative;
+            background: none;
+            border: none;
+            top: 20px;
+            left: 20px;
+            padding: 0;
+            display: grid;
+            gap: 6px;
+    
+            .location {
+              margin: 0;
+              font-size: 16px;
+              font-weight: 700;
+            }
+    
+            .date {
+              margin: 0;
+              font-size: 12px;
+              font-weight: 400;
+            }
+          }
+    
+          .card-body {
+            bottom: 0;
+            padding: 0;
+            position: absolute;
+            width: 100%;
+    
+            .weather-info {
+              .weather-info-text {
+                width: auto;
+                height: auto;
+                position: absolute;
+                bottom: 16px;
+                left: 16px;
+                padding: 4px;
+    
+                .temp {
+                  font-size: 48px;
+                  font-weight: 800;
+                  margin: 0;
+                }
+    
+                .min-max-temp {
+                  font-size: 16px;
+                  font-weight: 700;
+                }
+    
+                .condition {
+                  font-size: 14px;
+                  font-weight: 400;
+                  margin: 0;
+                }
+              }
+            }
+            .weather-info-img {
+              bottom: 10px;
+              position: absolute;
+              width: 50%;
+              left: 55%;
+    
+              @media (min-width: 990px) {
+                left: 60%;
+                width: 40%;
+              }
+    
+              @media (min-width: 1198px) {
+                left: 66%;
+                width: 33%;
+              }
+            }
+          }
+        }
+      }
+    
+      .weather-info-details {
+        display: grid;
+        padding: 4px 16px 4px 16px;
+        background-color: #16161f;
+        border-radius: 8px;
+        margin-bottom: 12px;
+    
+        .weather-info-item {
+          display: flex;
+          justify-content: space-between;
+          padding: 16px 0px;
+          border-bottom: 1px solid #1c1c27;
+    
+          .weather-info-label {
+            img {
+              margin-right: 12px;
+              width: 24px;
+              height: 24px;
+              object-fit: contain;
+            }
+          }
+        }
+      }
+    
+      .weather-daily {
+        padding: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: #16161f;
+        border-radius: 8px;
+        -webkit-border-radius: 8;
+        -moz-border-radius: 8;
+        -ms-border-radius: 8;
+        -o-border-radius: 8;
+    
+        .day-container {
+          flex-basis: calc(20% - 10px);
+          max-width: calc(20% - 10px);
+          background: none;
+    
+          .day-card {
+            width: 100%;
+            background: none;
+            border: none;
+            color: #bfbfd4;
+            display: inline-flex;
+            align-items: center;
+    
+            .day-maxtemp {
+              color: #fafafa;
+              margin: 10px 0px 0px 0px;
+            }
+            .day-mintemp {
+              font-size: smaller;
+            }
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  
+}
+
